@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <!-- Aqui no header foi inserido o CSS do bootstrap para poder deixar com que o layout ficasse respondivo tanto mobile quanto desk, e para facilitar a criação de classes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- JavaScript Bundle with Popper -->
+    <!-- Script do bootstrap para facilitar quando for precisar utilizar o JS no na página do site, e também foi adicionado o script para o Formulário -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <title>Meu Porfólio</title>
+  </head>
+  <body>
+    <!-- Aqui fica o header do site, onde há os links para acessar a página, foram feitos com link de ancoragem, para que quando for clicar, vá diretamente para o tema que precise -->
+    <header>
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#formacao" class="nav-link">Formação</a></li>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+          </ul>
+        </header>
+      </div>
+    </header>
+    <!-- Aqui é o primeiro link do menu onde está falando sobre o perfil do dono do site, foi criado uma section em especifico para ele, assim facilita as alterações em CSS -->
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 id="sobre" class="fw-light">Sobre</h1>
+            <img class="img-profile" src="assets/img-profile.jpg" width="250" height="250">
+            <p class="lead text-muted">
+              Sou formada no curso de Licenciatura em História, mas acabei mudando meu caminho para a área da tecnologia,
+              atualmente estou cursando Analise e Desenvolvimento de Sistemas, possuo conhecimento nas Linguagens Python, JavaScript e Java.<br>
+              Trabalho na área de criação de sites para e-commerce. Possuo conhecimento em SEO e integrações para marketplaces.
+            </p>
+          </div>
+        </div>
+      </section>
+        </div>
+      </div>
+      <!-- FORMACAO -->
+      <!-- Na área de formação foi mais simples na questão de colocar o bloco, assim as outras seções também foram feitas por bootstrap, para pode utilizar as classes prontas dele e na questão do responsivo -->
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <h2 id="formacao" class="fw-light">Formação Acadêmica</h2>
+            <div style="display: flex; justify-content: space-evenly;flex-direction: column;">
+            <div>
+                <h3 class="title-formacao">Licenciatura em História UNESPAR - (2015 - 2019)</h3>
+            </div>
+            <div>
+               <h3 class="title-formacao">Análise e Desenvolvimento de Sistemas UNINTER - (2021 - Atualmente)</h3>
+            </div>
+        </div>
+        </div>
+      </section>
+      <!-- PORTFOLIO -->
+      <!-- Na parte do portfólio foram colocadas as imagens dos projetos em si, e uma em linguagem Java, todas as imagens foram otimizadas para não dar problema no site com questão de performance,
+      foi colocado cada bloco com uma div para que assim quando fosse usar o css facilitar a questão da responsividade para mobile e desk -->
+      <div><h2 class="fw-light">Portfólio</h2></div>
+      <div id="portfolio" class="container marketing">
+        <!-- START THE FEATURETTES -->
+        <div class="blocks-main">
+        <div class="blocks-line-1">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img-pokedex.jpg" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><div class="title-project"><a class="link-portfolio" href="https://github.com/Nitilima/Pokedex"> Pokedex - feito em JavaScript </a></div>
+          </div>
+       
+ 
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img-calculator.jpg" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><div class="title-project"><a class="link-portfolio" href="https://github.com/Nitilima/Calculadora">Calculadora - feito em JavaScript</a></div>
+    
+          </div>
+        </div>
+        <div class="blocks-line-2">
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img-form.jpg" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><div class="title-project"><a class="link-portfolio" href="https://github.com/Nitilima/Form-teste">Formulário - feito em JavaScript</a></div>
+    
+          </div>
+
+          <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/img-jogo-da-velha.jpg" width="500" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><div class="title-project"><a class="link-portfolio" href="#">Jogo da velha - feito em Java</a></div>
+    
+          </div>
+        </div>
+        </div>
+      
+        <!-- /END THE FEATURETTES -->
+    
+      </div>
+        <!-- CONTATO -->
+        <!-- O contato foi feito algo bem simples para quando a pessoa for acessar ela receberá uma notificação com o window.alert, avisando que seus dados foram enviados -->
+      <div id="contato" class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Entre em contato</h1>
+            <p class="col-lg-10 fs-4">Se possui interesse nos meu trabalhos entre em contato agora que logo receberá uma resposta!</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-light">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" placeholder="Name">
+                <label for="floatingName">Nome</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" onclick="Enviar()"; type="submit">Entre em contato</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted">© 2022 Nicolle, Inc</span>
+            <div class="social-icons">
+              <div class="main-social-icons">
+                  <!-- Redes sociais com links, como foi inserido o bootstrap no codigo, facilita para inserir os icones -->
+            <a href="https://www.linkedin.com/in/nicolle-lima-dos-anjos-82640a1a4/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/Nitilima"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+          </div>
+          <!-- Aqui foi colocado o botão do whatsapp no rodapé para que ele possa permanecer fixo enquanto o cliente está acessando o site, tanto mobile quanto desk -->
+          <a href="https://wa.me/5541984832292?text=Gostaria%20de%20fazer%20um%20orçamento" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+<i style="margin-top:16px" class="fa fa-whatsapp"></i>
+</a>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
